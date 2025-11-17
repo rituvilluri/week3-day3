@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pet Adoption</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Container to Wrap Everything-->
+    <div id="container">
+
+        <!--Brand of the website-->
+        <header>
+            <h1>Adopt a Pet - Changing Lives through Responsibility</h1>
+        </header>
+
+        <!--Main navigation-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pets.html">Pets</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav> <!--End main navigation-->
+
+        <!--Main Content-->
+        <main>
+
+            <form action="/signup" method="post">
+                <fieldset>
+                    <legend>Contact Us Today</legend>
+            
+                    <!-- Full Name -->
+                    <label for="name">Enter your full name</label>
+                    <input type="text" id="name" name="name">
+            
+                    <!-- Email -->
+                    <label for="email">Enter your email</label>
+                    <input type="email" id="email" name="email">
+            
+                    <!-- Phone -->
+                    <label for="phone">Enter your phone</label>
+                    <input type="text" id="phone" name="phone">
+            
+                    <!-- Gender -->
+                    <label>Select Your Gender</label>
+                    <label>
+                        <input type="radio" name="gender" value="male"> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female"> Female
+                    </label>
+            
+                    <!-- Contact Method -->
+                    <label for="contact-method">How should we contact you?</label>
+                    <select id="contact-method" name="contact_method">
+                        <option>Email</option>
+                        <option>Phone</option>
+                    </select>
+            
+                    <!-- Message -->
+                    <label for="message">Tell us the reason for your visit today:</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+            
+                    <!-- Submit -->
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+
+        </main> <!--End main content-->
+
+        <!--Footer information-->
+        <footer>&copy; Copyright 2025. All Rights Reserved.</footer>
+
+    </div> <!--End container-->
+
+</body>
+
+</html>

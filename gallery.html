@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pet Adoption</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Container to Wrap Everything-->
+    <div id="container">
+
+        <!--Brand of the website-->
+        <header>
+            <h1>Adopt a Pet - Changing Lives through Responsibility</h1>
+        </header>
+
+        <!--Main navigation-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pets.html">Pets</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav> <!--End main navigation-->
+
+        <!--Main Content-->
+        <main>
+            <h1>Meet our Furbabies</h1>
+            
+            <ul id="doggies">
+                <!-- Images will be dynamically inserted here by JavaScript below -->
+            </ul>
+
+        </main> <!--End main content-->
+
+        <!--Footer information-->
+        <footer>&copy; Copyright 2025. All Rights Reserved.</footer>
+
+    </div> <!--End container-->
+
+    <script>
+        var photos = [];      // Declare an empty array to store image elements
+        var fileNames = [];   // Declare an empty array to store image file names
+        var imageList = [];   // Declare an empty array to store HTML list items containing images
+        var image;            // Declare a variable to store the assembled image list codes
+        var openList = "<li id='photo'>";  // Declare a variable to store the opening list tag
+        var closeList = "</li>";           // Declare a variable to store the closing list tag
+
+        for (var i = 0; i < 6; i++) {
+            fileNames.push("img" + (i + 1)); // Populate the fileNames array with image file names
+            photos.push("<img src='images/" + fileNames[i] + ".jpg'>"); // Populate the photos array with image elements
+            image = openList + photos[i] + closeList; // Assemble the complete list item with image
+            imageList.push(image); // stores the assembled list codes into an array
+        }
+        //display all 6 images codes stored in the array
+        document.getElementById("doggies").innerHTML = imageList.join("");
+    </script>
+
+    </body>
+</html>
