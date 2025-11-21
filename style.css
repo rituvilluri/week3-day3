@@ -25,7 +25,7 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #333333;
+    color:#5a4b81;
     font-weight: bold;
     padding: 0;
     font-size: 28px;
@@ -177,16 +177,12 @@ footer {
 form {
     margin-top: 30px;
 }
-
-
 fieldset {
     border: 2px solid #5a4b81;
     padding: 20px 25px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.9);
 }
-
-
 legend {
     font-size: 1.2rem;
     font-weight: bold;
@@ -244,4 +240,62 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #7f72c2;
+}
+.photo {
+    position: relative;
+}
+
+.descBar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+/* mouse over effect: show description text when hovering the image area */
+.photo:hover .descBar {
+    visibility: visible;
+}
+/* INFO BOX styling*/
+#infoBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    max-width: 700px;
+    padding: 30px 35px;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    border-radius: 10px;
+    visibility: hidden;
+    z-index: 1000;
+    text-align: left;
+}
+
+#infoBox h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+#infoBox p {
+    margin-bottom: 20px;
+}
+
+#infoBox a#infoClose {
+    color: #ffe27a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#infoBox a#infoClose:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }

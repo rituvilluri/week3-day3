@@ -29,10 +29,18 @@
         <!--Main Content-->
         <main>
             <h1>Meet our Furbabies</h1>
-            
+
+            <!-- image gallery -->
             <ul id="doggies">
-                <!-- Images will be dynamically inserted here by JavaScript below -->
+                <!-- Images and captions will be inserted by gallery.js -->
             </ul>
+
+            <!-- INFO BOX - inserts info from gallery.js-->
+            <div id="infoBox">
+                <h2 id="infoHeading"></h2>
+                <p id="infoText"></p>
+                <a href="#" id="infoClose">Click This To Close</a>
+            </div>
 
         </main> <!--End main content-->
 
@@ -41,23 +49,9 @@
 
     </div> <!--End container-->
 
-    <script>
-        var photos = [];      // Declare an empty array to store image elements
-        var fileNames = [];   // Declare an empty array to store image file names
-        var imageList = [];   // Declare an empty array to store HTML list items containing images
-        var image;            // Declare a variable to store the assembled image list codes
-        var openList = "<li id='photo'>";  // Declare a variable to store the opening list tag
-        var closeList = "</li>";           // Declare a variable to store the closing list tag
+    <!-- external script for gallery and info box -->
+    <script src="gallery.js"></script>
 
-        for (var i = 0; i < 6; i++) {
-            fileNames.push("img" + (i + 1)); // Populate the fileNames array with image file names
-            photos.push("<img src='images/" + fileNames[i] + ".jpg'>"); // Populate the photos array with image elements
-            image = openList + photos[i] + closeList; // Assemble the complete list item with image
-            imageList.push(image); // stores the assembled list codes into an array
-        }
-        //display all 6 images codes stored in the array
-        document.getElementById("doggies").innerHTML = imageList.join("");
-    </script>
+</body>
 
-    </body>
 </html>
