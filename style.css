@@ -32,7 +32,7 @@ header {
     letter-spacing: 0.5px;
 }
 
-/* NAVIGATION */
+/* navigation */
 nav {
     background-color: #ffe4c7;
     height: 60px;
@@ -41,7 +41,6 @@ nav {
     align-items: center;
     border-bottom: 2px solid #b37c3e;
 }
-
 nav ul {
     width: 100%;
     max-width: 700px;
@@ -51,13 +50,11 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-
 li {
     list-style-type: none;
     display: inline;
     padding: 0 20px;
 }
-
 li a {
     text-decoration: none;
     font-weight: bold;
@@ -87,7 +84,6 @@ main {
     width: auto;
    
 }
-
 main h1,
 main h2 {
     color: #5a4b81;
@@ -99,7 +95,7 @@ a:hover{
     color: #a14333;
 }
 
-/* TABLE STYLING */
+/* Table Styling */
 table {
     margin-top: 35px;
     border-collapse: collapse;
@@ -148,12 +144,10 @@ section img {
     gap: 20px;
 
 }
-
 #doggies li {
     flex: 0 0 250px;
 
 }
-
 /* Gallery photos */
 #doggies img {
     width: 100%;
@@ -172,7 +166,6 @@ footer {
     color: #f2ecff;
     font-size: 0.9rem;
 }
-
 /* Form Container */
 form {
     margin-top: 30px;
@@ -189,8 +182,6 @@ legend {
     color: #5a4b81;
     padding: 0 10px;
 }
-
-
 label {
     display: block;
     margin: 12px 0 4px 0;
@@ -259,11 +250,11 @@ input[type="submit"]:hover {
     cursor: pointer;
 }
 
-/* mouse over effect: show description text when hovering the image area */
+/* mouse over effect */
 .photo:hover .descBar {
     visibility: visible;
 }
-/* INFO BOX styling*/
+/* info box styling*/
 #infoBox {
     position: fixed;
     top: 50%;

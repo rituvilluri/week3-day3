@@ -23,18 +23,14 @@ var captions = [
 var infoTexts = [
     // Maple
     "Maple is a 3-month-old Goldendoodle from Austin, TX. She is playful, sweet, and loves snuggling after a long day of exploring.",
-
     // Sunny
     "Sunny is a 3-month-old Golden Retriever from Seattle, WA. He is cheerful, friendly, and brightens everyone's day with his happy tail wags.",
-
     // Rex
     "Rex is a 2-month-old Pitbull from Orlando, FL. He is energetic, goofy, and always ready for belly rubs and adventure.",
     // Pepper
     "Pepper is a 4-month-old Pug from San Diego, CA. She is curious, loving, and obsessed with treats and cuddles.",
-
     // Kiko
     "Kiko is a 3-month-old Shiba Inu from Portland, OR. He is clever, expressive, and loves zooming around the yard.",
-
     // Bruce
     "Bruce is not available for adoption because he is my cute little furbaby. He loves playing fetch endlessly and brings joy to everyone who meets him."
 ];
