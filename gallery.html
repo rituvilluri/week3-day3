@@ -24,7 +24,7 @@
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav> <!--End main navigation-->
+        </nav>
 
         <!--Main Content-->
         <main>
@@ -35,22 +35,35 @@
                 <!-- Images and captions will be inserted by gallery.js -->
             </ul>
 
-            <!-- INFO BOX - inserts info from gallery.js-->
+            <!-- INFO BOX -->
             <div id="infoBox">
                 <h2 id="infoHeading"></h2>
                 <p id="infoText"></p>
                 <a href="#" id="infoClose">Click This To Close</a>
             </div>
 
-        </main> <!--End main content-->
+        </main>
 
         <!--Footer information-->
         <footer>&copy; Copyright 2025. All Rights Reserved.</footer>
 
-    </div> <!--End container-->
+    </div>
 
-    <!-- external script for gallery and info box -->
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Gallery & info box  -->
     <script src="gallery.js"></script>
+
+    <!-- Lightbox  -->
+    <script src="lightbox.js"></script>
+
+    <!-- Lightbox elements -->
+    <div class="backdrop"></div>
+
+    <div class="box">
+        <div class="close">x</div>
+    </div>
 
 </body>
 

@@ -290,3 +290,43 @@ input[type="submit"]:hover {
     text-decoration: underline;
     cursor: pointer;
 }
+/* Lightbox Style */
+
+.backdrop {
+    z-index: 2000;
+    opacity: .0;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+.box {
+    z-index: 2001;
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #444;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}

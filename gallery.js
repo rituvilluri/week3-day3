@@ -39,7 +39,10 @@ var infoTexts = [
 for (var i = 0; i < 6; i++) {
     fileNames.push("img" + (i + 1));
     // <img> tag
-    var imgTag = "<img src='images/" + fileNames[i] + ".jpg' alt='" + captions[i] + "'>";
+    var imgTag =
+        "<a href='#/' class='lightbox-toggle'>" +
+        "<img src='images/" + fileNames[i] + ".jpg' alt='" + captions[i] + "'>" +
+        "</a>";
     // data-index for the caption 
     var captionBar =
         "<div class='descBar' data-index='" + i + "'>" + captions[i] + "</div>";
